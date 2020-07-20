@@ -9,25 +9,31 @@
 /* Begin PBXBuildFile section */
 		B43F63A424B2F1E2001F0DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F63A324B2F1E2001F0DF2 /* AppDelegate.swift */; };
 		B43F63A624B2F1E2001F0DF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F63A524B2F1E2001F0DF2 /* SceneDelegate.swift */; };
-		B43F63A824B2F1E2001F0DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F63A724B2F1E2001F0DF2 /* ViewController.swift */; };
+		B43F63A824B2F1E2001F0DF2 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F63A724B2F1E2001F0DF2 /* GamePlayViewController.swift */; };
 		B43F63AB24B2F1E2001F0DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43F63A924B2F1E2001F0DF2 /* Main.storyboard */; };
 		B43F63AD24B2F1E2001F0DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B43F63AC24B2F1E2001F0DF2 /* Assets.xcassets */; };
 		B43F63B024B2F1E2001F0DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43F63AE24B2F1E2001F0DF2 /* LaunchScreen.storyboard */; };
 		B43F63B924B2F50F001F0DF2 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F63B824B2F50F001F0DF2 /* Set.swift */; };
 		B43F63BB24B2F854001F0DF2 /* SetCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F63BA24B2F854001F0DF2 /* SetCardDeck.swift */; };
+		B43F63E524B84231001F0DF2 /* SetShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F63E424B84231001F0DF2 /* SetShapeView.swift */; };
+		B447B80624B8483100CE81A7 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B447B80524B8483100CE81A7 /* Grid.swift */; };
+		B467F99524C2D2C100C6FC10 /* CardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467F99424C2D2C100C6FC10 /* CardContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B43F63A024B2F1E2001F0DF2 /* Set.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Set.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43F63A024B2F1E2001F0DF2 /* Graphical Graphical Set.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Graphical Graphical Set.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43F63A324B2F1E2001F0DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B43F63A524B2F1E2001F0DF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B43F63A724B2F1E2001F0DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B43F63A724B2F1E2001F0DF2 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 		B43F63AA24B2F1E2001F0DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B43F63AC24B2F1E2001F0DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B43F63AF24B2F1E2001F0DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B43F63B124B2F1E2001F0DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B43F63B824B2F50F001F0DF2 /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		B43F63BA24B2F854001F0DF2 /* SetCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardDeck.swift; sourceTree = "<group>"; };
+		B43F63E424B84231001F0DF2 /* SetShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetShapeView.swift; sourceTree = "<group>"; };
+		B447B80524B8483100CE81A7 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B467F99424C2D2C100C6FC10 /* CardContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,7 @@
 		B43F63A124B2F1E2001F0DF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B43F63A024B2F1E2001F0DF2 /* Set.app */,
+				B43F63A024B2F1E2001F0DF2 /* Graphical Graphical Set.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,10 +66,13 @@
 		B43F63A224B2F1E2001F0DF2 /* Set */ = {
 			isa = PBXGroup;
 			children = (
-				B43F63A724B2F1E2001F0DF2 /* ViewController.swift */,
-				B43F63B824B2F50F001F0DF2 /* Set.swift */,
-				B43F63BA24B2F854001F0DF2 /* SetCardDeck.swift */,
+				B43F63A724B2F1E2001F0DF2 /* GamePlayViewController.swift */,
+				B467F99424C2D2C100C6FC10 /* CardContainer.swift */,
+				B43F63E424B84231001F0DF2 /* SetShapeView.swift */,
 				B43F63A924B2F1E2001F0DF2 /* Main.storyboard */,
+				B447B80524B8483100CE81A7 /* Grid.swift */,
+				B43F63BA24B2F854001F0DF2 /* SetCardDeck.swift */,
+				B43F63B824B2F50F001F0DF2 /* Set.swift */,
 				B43F63AC24B2F1E2001F0DF2 /* Assets.xcassets */,
 				B43F63B124B2F1E2001F0DF2 /* Info.plist */,
 				B43F63B724B2F21B001F0DF2 /* Supporting Files */,
@@ -84,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B43F639F24B2F1E2001F0DF2 /* Set */ = {
+		B43F639F24B2F1E2001F0DF2 /* Graphical Set */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B43F63B424B2F1E2001F0DF2 /* Build configuration list for PBXNativeTarget "Set" */;
+			buildConfigurationList = B43F63B424B2F1E2001F0DF2 /* Build configuration list for PBXNativeTarget "Graphical Set" */;
 			buildPhases = (
 				B43F639C24B2F1E2001F0DF2 /* Sources */,
 				B43F639D24B2F1E2001F0DF2 /* Frameworks */,
@@ -96,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = Set;
+			name = "Graphical Set";
 			productName = Set;
-			productReference = B43F63A024B2F1E2001F0DF2 /* Set.app */;
+			productReference = B43F63A024B2F1E2001F0DF2 /* Graphical Graphical Set.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B43F639B24B2F1E2001F0DF2 /* Build configuration list for PBXProject "Set" */;
+			buildConfigurationList = B43F639B24B2F1E2001F0DF2 /* Build configuration list for PBXProject "Graphical Set" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B43F639F24B2F1E2001F0DF2 /* Set */,
+				B43F639F24B2F1E2001F0DF2 /* Graphical Set */,
 			);
 		};
 /* End PBXProject section */
@@ -153,9 +162,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B43F63BB24B2F854001F0DF2 /* SetCardDeck.swift in Sources */,
+				B43F63E524B84231001F0DF2 /* SetShapeView.swift in Sources */,
 				B43F63B924B2F50F001F0DF2 /* Set.swift in Sources */,
-				B43F63A824B2F1E2001F0DF2 /* ViewController.swift in Sources */,
+				B467F99524C2D2C100C6FC10 /* CardContainer.swift in Sources */,
+				B43F63A824B2F1E2001F0DF2 /* GamePlayViewController.swift in Sources */,
 				B43F63A424B2F1E2001F0DF2 /* AppDelegate.swift in Sources */,
+				B447B80624B8483100CE81A7 /* Grid.swift in Sources */,
 				B43F63A624B2F1E2001F0DF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.minhoChoi.snu.ac.kr.Set;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Graphical Graphical Set";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.minhoChoi.snu.ac.kr.Set;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Graphical Graphical Set";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B43F639B24B2F1E2001F0DF2 /* Build configuration list for PBXProject "Set" */ = {
+		B43F639B24B2F1E2001F0DF2 /* Build configuration list for PBXProject "Graphical Set" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B43F63B224B2F1E2001F0DF2 /* Debug */,
@@ -344,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B43F63B424B2F1E2001F0DF2 /* Build configuration list for PBXNativeTarget "Set" */ = {
+		B43F63B424B2F1E2001F0DF2 /* Build configuration list for PBXNativeTarget "Graphical Set" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B43F63B524B2F1E2001F0DF2 /* Debug */,

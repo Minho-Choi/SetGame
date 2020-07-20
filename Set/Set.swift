@@ -8,9 +8,8 @@
 
 import Foundation
 
-struct Card: CustomStringConvertible {
-    var description: String { return "\(shape) \(color) \(number) \(fill)"}
-    
+struct Card {
+    var description: [String] { return ["\(shape)", "\(color)", "\(number)", "\(fill)"]}
     
     var shape: Shape
     var color: Color
@@ -19,22 +18,23 @@ struct Card: CustomStringConvertible {
     
     var isFlipped = false
     var isSelected = false
+    var isHint = false
     var identifier = 0
     
     enum Shape: String {
-        case circle = "●"
-        case star = "✶"
-        case triangle = "▲"
+        case roundRec
+        case diamond
+        case squiggle
         
-        static var all = [Shape.circle, .star, .triangle]
+        static var all = [Shape.roundRec, .diamond, .squiggle]
     }
     
     enum Color: String {
-        case black
-        case orange
-        case blue
+        case red
+        case green
+        case purple
         
-        static var all = [Color.black, .orange, .blue]
+        static var all = [Color.red, .green, .purple]
     }
     
     enum Number: Int {
