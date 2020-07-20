@@ -77,9 +77,10 @@ struct SetCardDeck { //81 cards
                     deckEmpty = true
                 }
             }
-        } else {
+        } else if randomAnswer == [] {
             gameOver = true
         }
+        
     }
 
     mutating func selectCard(at index: Int) {

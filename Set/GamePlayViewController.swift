@@ -10,15 +10,18 @@ import UIKit
 
 class GamePlayViewController: UIViewController {
     
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     @IBOutlet weak var cardsContainerView: CardContainer! {
         didSet {
             let swipe = UISwipeGestureRecognizer(target: self, action: #selector(addCard))
             swipe.direction = [.down]
             cardsContainerView.addGestureRecognizer(swipe)
-            cardsContainerView.updateButtons(of: game.shownCards)
             let tweak = UIRotationGestureRecognizer(target: self, action: #selector(shuffleCard))
             tweak.rotation = 0
             cardsContainerView.addGestureRecognizer(tweak)
+            updateButton()
         }
     }
     
@@ -30,13 +33,12 @@ class GamePlayViewController: UIViewController {
     
     @IBOutlet weak var hintButtonLook: UIButton!
     
-    @IBOutlet weak var scoreLabel: UILabel!
+
     
     @IBAction func newGame(_ sender: UIButton) {
         game = SetCardDeck()
         updateButton()
     }
-    
     
     lazy var game = SetCardDeck()
     
@@ -74,12 +76,20 @@ class GamePlayViewController: UIViewController {
     }
     
     private func updateButton() {
+        if game.gameOver {
+            print("game over")
+            gameOverAnimation()
+        }
         cardsContainerView.clearCardContainer()
         cardsContainerView.updateButtons(of: game.shownCards)
         assignTargetAction()
-        scoreLabel.text = "Score: \(game.score)"
+        if let scoreboard = scoreLabel {
+            scoreboard.text = "Score: \(game.score)"
+        }
     }
-
-
+    
+    func gameOverAnimation() {
+        
+    }
 }
 
